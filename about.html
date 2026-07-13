@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Tree Trunk Family Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green: #2E7D32;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif
+        }
+
+        body {
+            color: #333;
+            line-height: 1.7
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            background: #f8f8f8;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+            z-index: 1000
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px
+        }
+
+        .logo img {
+            height: 55px
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none
+        }
+
+        nav li {
+            margin-left: 25px
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: var(--green)
+        }
+
+        .hero {
+            margin-top: 80px;
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url('images/img3.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff
+        }
+
+        .hero h1 {
+            font-size: 60px
+        }
+
+        .hero p {
+            font-size: 22px
+        }
+
+        section {
+            padding: 80px 10%
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto
+        }
+
+        .section-title {
+            color: var(--green);
+            margin-bottom: 20px;
+            font-size: 40px
+        }
+
+        .story {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start
+        }
+
+        .story-text,
+        .story-image {
+            flex: 1
+        }
+
+        .story-image {
+            display: flex;
+            flex-direction: column;
+            gap: 20px
+        }
+
+        .story-image img {
+            width: 100%;
+            border-radius: 15px
+        }
+
+        .vision-section {
+            background: #f8f8f8
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .08)
+        }
+
+        .card h3 {
+            color: var(--green);
+            margin-bottom: 10px
+        }
+
+        .founder {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            align-items: center
+        }
+
+        .founder img {
+            width: 100%;
+            border-radius: 12px
+        }
+
+        .founder-text h3 {
+            color: var(--green)
+        }
+
+        .cta {
+            text-align: center;
+            background: #f5f5f5
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: var(--green);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 40px
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 30px
+        }
+
+        @media(max-width:768px) {
+
+            .story,
+            .founder {
+                display: block
+            }
+
+            .hero h1 {
+                font-size: 42px
+            }
+
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 15px
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="images/logo.png"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>About Us</h1>
+            <p>Preserving Families So That Children Can Thrive</p>
+        </div>
+    </section>
+    <section>
+        <div class="container story">
+            <div class="story-text">
+                <h2 class="section-title">Who We Are</h2>
+                <p>Tree Trunk Family Care is a Christian-based organisation committed to restoring hope and preserving
+                    families throughout Uganda and Africa.</p><br>
+                <p>We believe every child deserves a loving family, quality education, spiritual guidance and the
+                    opportunity to reach their God-given potential.</p><br>
+                <h2 class="section-title">Our Story</h2>
+                <p>Leading with faith and compassion, Tree Trunk Family Care was founded in Misindye, Goma Division,
+                    Mukono District, Uganda, to support vulnerable families through faith, education and empowerment.
+                </p><br>
+                <p>Over the years, Tree Trunk Family Care has grown into a trusted organisation dedicated to preserving
+                    families and empowering children to thrive.</p>
+                <p>
+                    Tree Trunk Family Care is making a difference in the lives of families through business training and
+                    skilling programs aimed at improving economic well-being and restoring dignity.</p>
+            </div>
+            <div class="story-image"><img src="images/img2.jpg"><img src="images/img1.jpg"></div>
+        </div>
+    </section>
+    <section class="vision-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align:center">Vision, Mission & Values</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Mission</h3>
+                    <p>Providing holistic social and economic support.</p>
+                </div>
+                <div class="card">
+                    <h3>Vision</h3>
+                    <p>Improving the well-being of vulnerable families so children thrive.</p>
+                </div>
+                <div class="card">
+                    <h3>Objectives</h3>
+                    <ul>
+                        <li>Business skills training</li>
+                        <li>Startup capital</li>
+                        <li>Resource mobilisation</li>
+                        <li>Psychological support</li>
+                        <li>Protect children's rights</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Core Values</h3>
+                    <p>Respect, Teamwork, Faithfulness, Love and Transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="card founder"><img src="images/founder.jpg">
+            <div class="founder-text">
+                <h3>A Message from Our Founder</h3>
+                <p>At Tree Trunk Family Care, we believe that no family is beyond restoration. Just like a tree can grow
+                    again after being cut down, families too can find healing, strength, and new life.
+
+                    This mission was born out of a deep desire to see children thrive in loving and stable homes.
+                    Through faith, support, and community, we are committed to restoring hope—one family at a time.</p>
+                <p><strong>— Norah Nakuya</strong><br>Uganda</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Join Us In Restoring Hope</h2>
+        <p>Together we can preserve families and empower children to thrive.</p><a class="btn"
+            href="index.html#contact">Partner With Us</a>
+    </section>
+    <footer>© 2026 Tree Trunk Family Care. All Rights Reserved.</footer>
+</body>
+
+</html>

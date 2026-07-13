@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tree Trunk Family Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green: #2E7D32;
+            --gold: #D4A017;
+            --light: #f8f8f8
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #f8f8f8;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+            z-index: 1000
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            max-width: 1200px;
+            margin: auto
+        }
+
+        .logo img {
+            height: 55px
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none
+        }
+
+        nav li {
+            margin-left: 25px
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222
+        }
+
+        nav a.active,
+        nav a:hover {
+            color: var(--green)
+        }
+
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(255, 255, 255, .65), rgba(255, 255, 255, .65)), url('images/bgimg.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 20px 60px
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: var(--green)
+        }
+
+        .welcome {
+            color: var(--gold);
+            letter-spacing: 3px;
+            font-weight: 600
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: var(--green);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 40px
+        }
+
+        .btn:hover {
+            background: var(--gold)
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+            display: block
+        }
+
+        section {
+            padding: 80px 10%
+        }
+
+        .contact {
+            background: var(--light);
+            padding: 30px;
+            border-left: 5px solid var(--green);
+            border-radius: 12px
+        }
+
+        .cta {
+            text-align: center;
+            background: #f5f5f5
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 30px
+        }
+
+        @media(max-width:768px) {
+            nav {
+                flex-direction: column
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 15px
+            }
+
+            .hero h1 {
+                font-size: 40px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class='logo'><img src='images/logo.png' alt='Logo'></div>
+            <ul>
+                <li><a class='active' href='index.html'>Home</a></li>
+                <li><a href='about.html'>About</a></li>
+                <li><a href='programs.html'>Programs</a></li>
+                <li><a href='donate.html'>Donate</a></li>
+                <li><a href='#contact'>Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class='hero'>
+        <div>
+            <div class='welcome'>WELCOME TO</div>
+            <h1>Tree Trunk Family Care</h1>
+            <p>Tree Trunk Family Care is a Christian-based organization founded upon the Biblical principle in Job 14:7.
+            </p>
+            <p><em>“For there is hope for a tree when it is cut down, that it will sprout again and that its shoots will
+                    not cease.”</em></p>
+            <p>We are transforming Uganda through evangelism, education and empowerment.</p><a class='btn'
+                href='about.html'>Learn More</a>
+        </div>
+    </section>
+    <section class='hero-image'><img src='images/heroimage.jpeg' alt='Hero'></section>
+    <section id='contact'>
+        <div class='container'>
+            <div class='contact'>
+                <h2>Contact Us</h2>
+                <p>Misindye, Goma Division, Mukono District, Uganda</p>
+                <p>P.O. Box 131855</p>
+                <p><a href='mailto:treetrunkfamilycare@gmail.com'>treetrunkfamilycare@gmail.com</a></p>
+                <p><a href='tel:+256774827241'>+256 774 827241</a></p>
+            </div>
+        </div>
+    </section>
+    <section class='cta'>
+        <h2>Join Us In Restoring Hope</h2>
+        <p>Together we can preserve families so children can thrive.</p><a class='btn' href='donate.html'>Get
+            Involved</a>
+    </section>
+    <footer>
+        <p>© 2026 Tree Trunk Family Care. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
